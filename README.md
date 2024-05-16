@@ -22,11 +22,24 @@ ArduPilot is the most advanced, full-featured, and reliable open source autopilo
 It has been under development since 2010 by a diverse team of professional engineers, computer scientists, and community contributors.
 Our autopilot software is capable of controlling almost any vehicle system imaginable, from conventional airplanes, quad planes, multi-rotors, and helicopters to rovers, boats, balance bots, and even submarines.
 It is continually being expanded to provide support for new emerging vehicle types.
+
 ## Additional Notes
 - This repo has been modded with additional parameters made in the Plane Directory all flagged under **PP_** refer to the Parameters.cpp and Parameters.h file in the ArduPlane directory 
 
 - To see these parameters in mission planner follow this link 
 - https://github.com/ArduPilot/MissionPlanner/issues/1412
+- Source material on compiling can be found in the following repos: 
+- https://github.com/ArduPilot/ardupilot/blob/master/BUILD.md
+- Before compiling the the code do the following
+```
+git submodule update --init --recursive #get all your submodules pulled
+```
+- Now do the following:
+```
+./waf configure --board CubeOrangePlus #if you are using the OrangePlus cube
+./waf plane #compiles the code for the plane
+```
+- A .apj file will be compiled and you can flash that to your respective embedded device.
 
 ## The ArduPilot project is made up of: ##
 
