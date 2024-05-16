@@ -22,6 +22,11 @@ ArduPilot is the most advanced, full-featured, and reliable open source autopilo
 It has been under development since 2010 by a diverse team of professional engineers, computer scientists, and community contributors.
 Our autopilot software is capable of controlling almost any vehicle system imaginable, from conventional airplanes, quad planes, multi-rotors, and helicopters to rovers, boats, balance bots, and even submarines.
 It is continually being expanded to provide support for new emerging vehicle types.
+## Additional Notes
+- This repo has been modded with additional parameters made in the Plane Directory all flagged under **PP_** refer to the Parameters.cpp and Parameters.h file in the ArduPlane directory 
+
+- To see these parameters in mission planner follow this link 
+- https://github.com/ArduPilot/MissionPlanner/issues/1412
 
 ## The ArduPilot project is made up of: ##
 

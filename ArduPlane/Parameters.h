@@ -356,6 +356,11 @@ public:
         k_param_acro_yaw_rate,
         k_param_takeoff_throttle_max_t,
         k_param_autotune_options,
+
+        k_param_pp_pulse_rate_freq = 267,
+        k_param_pp_sc, 
+        k_param_pp_arm,
+        k_param_pp_fire
     };
 
     AP_Int16 format_version;
@@ -454,6 +459,12 @@ public:
     AP_Int8 takeoff_throttle_slewrate;
     AP_Float takeoff_pitch_limit_reduction_sec;
     AP_Int8 level_roll_limit;
+
+    AP_Int16 pp_pulse_rate_freq;
+    AP_Int16 pp_sc;
+    AP_Int8  pp_arm;
+    AP_Int8  pp_fire;    
+
 #if AP_TERRAIN_AVAILABLE
     AP_Int32 terrain_follow;
     AP_Int16 terrain_lookahead;

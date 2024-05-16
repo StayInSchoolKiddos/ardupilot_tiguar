@@ -728,6 +728,36 @@ const AP_Param::Info Plane::var_info[] = {
     // @User: Advanced
     GSCALAR(crash_accel_threshold,          "CRASH_ACC_THRESH",   0),
 
+    // @Param: PP_PRF
+    // @DisplayName: PP Pulse Rate Freq
+    // @Description: Used to set the Source Frequency for the Pulse Rate
+    // @Units: KHz
+    // @Range 0 1000
+    // @User: Advanced
+    GSCALAR(pp_pulse_rate_freq, "PP_PRF", 0),
+
+    // @Param: PP_SC
+    // @DisplayName: PP Shot Count
+    // @Description: Number of shots to fire from Source
+    // @Range 10 1000
+    // @User: Advanced
+    GSCALAR(pp_sc, "PP_SC", 10),
+
+    // @Param: PP_ARM
+    // @DisplayName: PP Arm
+    // @Description: Arms the pew pew
+    // @Range 0 1
+    // @User: Advanced
+    GSCALAR(pp_arm, "PP_ARM", 0),
+
+    // @Param: PP_FIRE
+    // @DisplayName: PP FIRE
+    // @Description: Fires the trigger 0 = off , 1 = fire , 2 = complete
+    // @Range 0 2
+    // @User: Advanced
+    GSCALAR(pp_fire, "PP_FIRE", 0),
+
+
     // @Param: CRASH_DETECT
     // @DisplayName: Crash Detection
     // @Description: Automatically detect a crash during AUTO flight and perform the bitmask selected action(s). Disarm will turn off motor for safety and to help against burning out ESC and motor. Set to 0 to disable crash detection.
