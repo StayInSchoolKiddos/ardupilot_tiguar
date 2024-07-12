@@ -360,7 +360,8 @@ public:
         k_param_pp_pulse_rate_freq = 267,
         k_param_pp_sc, 
         k_param_pp_arm,
-        k_param_pp_fire
+        k_param_pp_fire,
+        k_param_pp_conn
     };
 
     AP_Int16 format_version;
@@ -463,7 +464,8 @@ public:
     AP_Int16 pp_pulse_rate_freq;
     AP_Int16 pp_sc;
     AP_Int8  pp_arm;
-    AP_Int8  pp_fire;    
+    AP_Int8  pp_fire;
+    AP_Int8  pp_conn; 
 
 #if AP_TERRAIN_AVAILABLE
     AP_Int32 terrain_follow;

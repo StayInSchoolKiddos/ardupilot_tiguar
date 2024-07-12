@@ -750,13 +750,19 @@ const AP_Param::Info Plane::var_info[] = {
     // @User: Advanced
     GSCALAR(pp_arm, "PP_ARM", 0),
 
+    // @Param: PP_CONN
+    // @DisplayName: PP Connect
+    // @Description: Used to verify we are connected to the co-computer
+    // @Range 0 1
+    // @User: Advanced
+    GSCALAR(pp_conn, "PP_CONN", 0),
+
     // @Param: PP_FIRE
     // @DisplayName: PP FIRE
     // @Description: Fires the trigger 0 = off , 1 = fire , 2 = complete
     // @Range 0 2
     // @User: Advanced
     GSCALAR(pp_fire, "PP_FIRE", 0),
-
 
     // @Param: CRASH_DETECT
     // @DisplayName: Crash Detection
