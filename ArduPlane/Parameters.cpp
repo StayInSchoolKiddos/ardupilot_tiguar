@@ -764,12 +764,12 @@ const AP_Param::Info Plane::var_info[] = {
     // @User: Advanced
     GSCALAR(pp_fire, "PP_FIRE", 0),
 
-    // @Param: PP_ARM
-    // @DisplayName: PP Arm
+    // @Param: PP_REBOOT
+    // @DisplayName: PP Reboot
     // @Description: Boots the companion computer 0 = off , 1 = arm, 2 = complete
     // @Range 0 2
     // @User: Advanced
-    GSCALAR(pp_arm, "PP_REBOOT", 0),
+    GSCALAR(pp_reboot, "PP_REBOOT", 0),
 
     // @Param: CRASH_DETECT
     // @DisplayName: Crash Detection
